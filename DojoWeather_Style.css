@@ -1,0 +1,103 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#navBar{
+    height: 80px;
+    background-color: #9fc5f8;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navOptions{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cityBar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 230px;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+#tempIndic{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#daysBar {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.daybox{
+    width: 250px;
+    height: 300px;
+    border: none;
+    margin: 10px 10px;
+    background-color: #eeeeee;
+}
+
+#todBox, #tomBox, #FriBox, #satBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#degrees, #degrees2, #degrees3, #degrees4{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rain, .sun, .cloud{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.red, .red2, .red3, .red4{
+    color: red;
+}
+
+.blue, .blue2, .blue3, .blue4{
+    color: blue;
+}
+
+#cookieBox{
+    position: fixed;
+    left: 238px;
+    bottom: 100px;
+    width: 1060px;
+    height: 150px;
+    background-color: #eeeeee;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cookieInfo{
+    width: 600px;    
+}
+
+.acceptBtn {
+    width: 100px;
+    height: 30px;
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}

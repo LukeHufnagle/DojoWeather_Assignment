@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="DojoWeather_Style.css">
+</head>
+<body>
+    <div id="navBar">
+        <h1>DojoWeather</h1>
+        <div id="navOptions">
+            <h2 onclick="alert('Burbank')">Burbank</h2>
+            <h2 onclick="alert('Chicago')">Chicago</h2>
+            <h2 onclick="alert('Dallas')">Dallas</h2>
+        </div>
+    </div>
+    <div id="cityBar">
+        <h2>San Jose</h2>
+        <div id="tempIndic">
+            <h4>show temperature in</h4>
+            <select name="Temp" id="TempBar">
+                <option value="celsius">&#8451</option>
+                <option onclick=changeTemp() value="fahrenheit">&#x2109</option>
+            </select>
+        </div>
+    </div>
+    <div id="daysBar">
+        <div id="todBox" class="daybox">
+            <h2>Today</h2>
+            <img class="rain" src="assets/some_rain.png" alt="rain">
+            <h4>some rain</h4>
+            <div id="degrees">
+                <h3 class="red">24</h3>
+                <h3 class="blue">18</h3>
+            </div>
+        </div>
+        <div id="tomBox" class="daybox">
+            <h2>Tomorrow</h2>
+            <img class="sun" src="assets/some_sun.png" alt="sun">
+            <h4>some sun</h4>
+            <div id="degrees2">
+                <h3 class="red2">27</h3>
+                <h3 class="blue2">19</h3>
+            </div>
+        </div>
+        <div id="FriBox" class="daybox">
+            <h2>Friday</h2>
+            <img class="cloud" src="assets/some_clouds.png" alt="cloudy">
+            <h4>some clouds</h4>
+            <div id="degrees3">
+                <h3 class="red3">21</h3>
+                <h3 class="blue3">16</h3>
+            </div>
+        </div>
+        <div id="satBox" class="daybox">
+            <h2>Saturday</h2>
+            <img class="sun" src="assets/some_sun.png" alt="">
+            <h4>some sun</h4>
+            <div id="degrees4">
+                <h3 class="red4">26</h3>
+                <h3 class="blue4">21</h3>
+            </div>
+        </div>
+    </div>
+    <div id="cookieBox">
+        <img src="assets/cookie.png" alt="cookie">
+        <div class="cookieInfo">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <span><a href="#">Read more...</a></span></p>
+        </div>
+        <button onclick="remove(this)" class="acceptBtn">I accept</button>
+    </div>
+    <script src="DojoWeather_Script.js"></script>
+</body>
+</html>
